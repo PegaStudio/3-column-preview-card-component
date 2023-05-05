@@ -1,0 +1,104 @@
+body{
+    background-color: lightgray;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    color: 	#f2f2f2;
+    font-size: 16px;
+}
+
+.main-container{
+    margin: 30px auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: left;
+   margin-left: 10%;
+   margin-right: 10%;
+   
+}
+
+
+.colors{
+    background-color:#e38826 ;
+    background-color: 	#006970;
+    background-color: 	#004241;
+}
+
+.sedans{
+    background-color:#e38826 ;
+    border-radius: 10px 10px 0 0;
+}
+.suvs{
+    background-color: 	#006970; 
+}
+.luxury{
+    background-color: 	#004241; 
+    border-radius: 0 0 10px 10px;
+}
+.car-header{
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 25px;
+    
+    
+}
+.cars{
+    padding:50px;
+    max-width: 14rem;
+    position: relative;
+}
+
+.button-luxury{
+    color:	#004241;
+}
+.button-sedans{
+ color:  #e38826;
+}
+.button-suvs{
+    color: #006970;
+}
+.text-button{
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 70px;
+    background-color: #f2f2f2;
+    border-radius: 40px;}
+
+.text-button:hover{
+        box-sizing: border-box;
+        color: #f2f2f2;
+        background-color: transparent;
+        border: solid 2px #f2f2f2;
+        padding: 8px 28px; /* jak nie przelicze to dodaje mi po 2 piksele pomimo borderbox)*/
+    
+    }
+.description{
+    font-size: 15px;
+    margin-bottom: 100px; /* eby button stal w miejscu jak tekst zajmuje wiecej linijek*/
+}
+@media  (min-width:800px ){
+    .main-container{
+        flex-direction: row;
+    }
+    .sedans{
+        border-radius: 10px 0 0 10px;
+    }
+   
+    .luxury{
+        border-radius: 0 10px 10px 0; 
+    }
+    .button{
+        position: absolute;/* eby button stal w miejscu jak tekst zajmuje wiecej linijek*/
+        bottom: 30px;
+       
+
+    }
+    
+}
